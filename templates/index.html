@@ -1,0 +1,140 @@
+{% extends "boilerplate.html" %}
+
+{% block body %}
+
+
+
+
+<div class="cardBox  mt-3">
+  <div class="row  m-4 ">
+   <div class="E-Box">
+  
+    {% for pro in products %}
+    {% if pro.item == 'Shirt' %}
+    
+      <div class="card listing-card setCard">
+        <img src="{{pro.url}}" 
+          class="card-img-top" 
+          alt="listing_image" 
+          style="height: 18rem;"
+        >
+        <div class="card-img-overlay">Explore</div>
+        <div class="card-body">
+          <p class="card-text">
+            <b>{{pro.title}}</b>
+            <br>
+            &#8377;{{pro.price}}
+          </p>
+          &nbsp;&nbsp;&nbsp;
+          <a href="{% url 'show' id=pro.UserID %}" class="listing-link "><button type="button" class="btn btn-outline-success search-btn">View Details</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-warning search-btn">Buy Now</button>
+        </div>
+      </div>
+    
+    {% endif %}
+    {% endfor %}
+    
+   </div>
+  </div>
+</div>
+
+<div class="cardBox  mt-3">
+  <div class="row  m-4 ">
+   <div class="E-Box">
+  
+    {% for pro in products %}
+    {% if pro.item == 'Pants' %}
+    
+      <div class="card listing-card setCard">
+        <img src="{{pro.url}}" 
+          class="card-img-top" 
+          alt="listing_image" 
+          style="height: 18rem;"
+        >
+        <div class="card-img-overlay">Explore</div>
+        <div class="card-body">
+          <p class="card-text">
+            <b>{{pro.title}}</b>
+            <br>
+            &#8377;{{pro.price}}
+          </p>
+          &nbsp;&nbsp;&nbsp;
+          <a href="{% url 'show' id=pro.UserID %}" class="listing-link "><button type="button" class="btn btn-outline-success search-btn">View Details</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-warning search-btn">Buy Now</button>
+        </div>
+      </div>
+    
+    {% endif %}
+    {% endfor %}
+    
+   </div>
+  </div>
+</div>
+
+<div class="cardBox  mt-3">
+  <div class="row  m-4 ">
+   <div class="E-Box">
+  
+    {% for pro in products %}
+    {% if pro.item == 'Watch' %}
+    
+      <div class="card listing-card setCard">
+        <img src="{{pro.url}}" 
+          class="card-img-top" 
+          alt="listing_image" 
+          style="height: 18rem;"
+        >
+        <div class="card-img-overlay">Explore</div>
+        <div class="card-body">
+          <p class="card-text">
+            <b>{{pro.title}}</b>
+            <br>
+            &#8377;{{pro.price}}
+          </p>
+          &nbsp;&nbsp;&nbsp;
+          <a href="{% url 'show' id=pro.UserID %}" class="listing-link "><button type="button" class="btn btn-outline-success search-btn">View Details</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-warning search-btn">Buy Now</button>
+        </div>
+      </div>
+    
+    {% endif %}
+    {% endfor %}
+    
+   </div>
+  </div>
+</div>
+
+<div class="cardBox  mt-3">
+  <div class="row  m-4 ">
+   <div class="E-Box">
+  
+    {% for pro in products %}
+    {% if pro.item == 'Shoes' %}
+    
+      <div class="card listing-card setCard">
+        <img src="{{pro.url}}" 
+          class="card-img-top" 
+          alt="listing_image" 
+          style="height: 18rem;"
+        >
+        <div class="card-img-overlay">Explore</div>
+        <div class="card-body">
+          <p class="card-text">
+            <b>{{pro.title}}</b>
+            <br>
+            &#8377;{{pro.price}}
+          </p>
+          &nbsp;&nbsp;&nbsp;
+          <a href="{% url 'show' id=pro.UserID %}" class="listing-link "><button type="button" class="btn btn-outline-success search-btn">View Details</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-warning search-btn">Buy Now</button>
+        </div>
+      </div>
+    
+    {% endif %}
+    {% endfor %}
+    
+   </div>
+  </div>
+</div>
+
+{% endblock body %}

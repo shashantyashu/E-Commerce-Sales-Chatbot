@@ -1,0 +1,78 @@
+{% extends "boilerplate.html" %} 
+{% load static %}
+{% block body %} 
+{% for pro in product %}
+{% if pro.UserID == context.id %} 
+<div class="d-none d-sm-none d-md-block">
+  <div class="mt-5">
+    <div class="m-4">
+      <div class="">
+        <img
+          src="{{pro.url}}"
+          class="card-img-top"
+          alt="listing_image"
+          style="height: 18rem"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cardBox d-lg-inline">
+  <div class="row m-4">
+    <div class="E-Box ">
+      <div class="card listing-card setCard">
+        <img
+          src="{{pro.url}}"
+          class="card-img-top mt-5"
+          alt="listing_image"
+          style="height: 15rem"
+        />
+        <div class="card-img-overlay">Explore</div>
+        <div class="card-body">
+          <p class="card-text">
+            <b>{{pro.title}}</b>
+            <br />
+            &#8377;{{pro.price}}
+          </p>
+          &nbsp;&nbsp;&nbsp;
+          <a href="{% url 'show' id=pro.UserID %}" class="listing-link"
+            ><button type="button" class="btn btn-outline-success search-btn">
+              Add to Cart
+            </button></a
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-warning search-btn">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+<div class="position-relative top-50% mx-3">
+  <div class="position-absolute top- start-0">
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio,
+            alias eligendi rem voluptatum at vero placeat dolores obcaecati
+            tenetur consequuntur non provident eum nemo beatae voluptates
+            assumenda velit debitis!
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio,
+            alias eligendi rem voluptatum at vero placeat dolores obcaecati
+            tenetur consequuntur non provident eum nemo beatae voluptates
+            assumenda velit debitis!
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio,
+            alias eligendi rem voluptatum at vero placeat dolores obcaecati
+            tenetur consequuntur non provident eum nemo beatae voluptates
+            assumenda velit debitis!
+        </li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}
+{% endfor %} 
+{% endblock body %}

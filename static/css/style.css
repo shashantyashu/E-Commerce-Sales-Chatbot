@@ -1,0 +1,165 @@
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navbar-brand{
+    height: 40px;
+}
+
+.nav-link {
+    color: #222222 !important;
+    opacity: 0.7;
+}
+.nav-link:hover {
+    opacity: 1;
+}
+
+#navbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10 !important;
+}
+
+@media(min-width: 1200px){
+    .search-input{
+        border-radius: 25px !important;
+        padding: 0.5rem 3rem 0.5rem 3rem !important;
+        width: 600px !important;
+        text-align: center !important;
+    }
+}
+
+
+.search-btn {
+    border-radius: 25px !important;
+    padding: 0 1.5rem 0 1.1rem !important;
+}
+
+.search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+    padding: 0 0 0 0.2rem;
+}
+
+/* index */
+
+.icon-body {
+    text-align: center;
+    justify-self: center !important;
+}
+
+.icon-p {
+    font-size: 10px;
+    margin-left: 15px;
+}
+
+.icon {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.filter {
+    margin-right: 1.8rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.canva {
+    width: 80px !important;
+}
+
+.OFFcanvas {
+    overflow-y: scroll;
+}
+
+.OFFcanvas::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.BTN {
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+.slider {
+    display: inline-block!important;
+    margin-left: 10px;
+}
+
+.h3{
+    text-align: center;
+}
+
+.E-Box {
+    max-height: 400px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.E-Box::-webkit-scrollbar{
+    width: 0;
+}
+
+.E-Box .setCard {
+    min-width: 290px;
+    display: inline-block !important;
+    margin-right: 20px !important;
+    
+}
+
+/* cards */
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    background-color: #222222 !important;
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* Card Effect */
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.3;
+    background-color: white;
+}
+
+
+.content {
+    display: flex;
+    position: relative;
+    top: 300px;
+}
+ 

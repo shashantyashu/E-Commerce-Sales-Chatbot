@@ -1,0 +1,41 @@
+#chatbot{
+    border: 1px solid black;
+    height: 360px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#chatbot::-webkit-scrollbar {
+    width: 0;
+}
+
+.botText{
+    text-align: left;
+}
+
+#userText{
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: #afafaf;
+
+}
+
+#UserInput{
+    margin-top: 20px;
+}
+
+.inline{
+    display: inline !important;
+}
+
+#TextInput{
+    border: 2px solid white;
+    border-bottom-color: #afafaf;
+    width: 250px;
+}
+
+#ButtonInput{
+    display: inline;
+}
