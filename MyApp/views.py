@@ -15,7 +15,7 @@ from django.contrib.auth.forms import UserCreationForm
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer, ChatterBotCorpusTrainer
 
-intents = json.loads(open(r'C:\Users\user\Desktop\Assigment\E_Com\static\js\data.json').read())
+intents = json.loads(open(r'C:\Users\user\Desktop\Projects\Assigment\E_Com\static\js\data.json').read())
 
 
 bot =  ChatBot('chatbot', read_only=False, 
@@ -79,7 +79,7 @@ def registerUser(request):
         initial_data = {'username':"", 'password1':"", 'password2':""}
         
         
-        form = UserCreationForm(initial_data)
+        form = UserCreationForm(initial=initial_data)
         print(form)
     return render(request, 'auth/register.html',{'form':form})
 

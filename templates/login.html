@@ -94,15 +94,18 @@
     </head>
     <body class="d-flex align-items-center py-4 bg-body-tertiary">
       
-  <main class="form-signin mt-5 w-50 m-auto">
-    <form class="form-signin" method="post" action="/login">
+  <main class="form-signin mt-5 w-50 m-auto" novalidate>
+    <form class=" needs-validation" method="post" action="/login">
         {% csrf_token %}
       {% comment %} <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> {% endcomment %}
       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
   
       <div class="form-floating">
-        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="username" required/>
-        <label for="floatingInput">Username</label>
+        <input type="text" name="username" class="form-control" id="validationCustom01" placeholder="username"  required/>
+        <label for="validationCustom01" class="form-label">Username</label>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
       </div>
       <div class="form-floating mt-2">
         <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>

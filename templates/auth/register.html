@@ -20,12 +20,7 @@
     <main class="form-signin mt-5 w-50 m-auto">
       <form class="form-signin" method="post" action="{% url 'register' %}">
         {% csrf_token %}
-        <p>
-          Your password can't be too similar to your other personal
-          information.Your password must contain at least 8 characters.Your
-          password can't be a commonly used password.Your password can't
-          beentirely numeric.
-        </p>
+        
         <h1 class="h3 mb-3 fw-normal">Please Register</h1>
 
         <div class="form-floating mt-2">
@@ -40,7 +35,7 @@
           />
           <label for="{{ form.username.id_for_label }}">Username</label>
           <span class="text-danger">
-            {{ form.username.errors|join:", " }}
+            {{ form.username.errors }}
           </span>
         </div>
         <div class="form-floating mt-2">
@@ -55,7 +50,7 @@
           />
           <label for="{{ form.password1.id_for_label }}">Password1</label>
           <span class="text-danger">
-            {{ form.password1.errors|join:", " }}
+            {{ form.password1.errors }}
           </span>
         </div>
         <div class="form-floating mt-2">
@@ -72,7 +67,7 @@
             >Re-Type Password</label
           >
           <span class="text-danger">
-            {{ form.password1.errors|join:", " }}
+            {{ form.password2.errors }}
           </span>
         </div>
 
