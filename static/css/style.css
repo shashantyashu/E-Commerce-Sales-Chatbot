@@ -149,6 +149,7 @@ body::-webkit-scrollbar {
 
 .card-img-overlay {
     opacity: 0;
+    height: 200px;
 }
 
 .card-img-overlay:hover {
@@ -163,3 +164,28 @@ body::-webkit-scrollbar {
     top: 300px;
 }
  
+
+.hero {
+    background-image: url('https://cdn.pixabay.com/photo/2023/11/16/10/26/casio-8392121_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+}
+.hero p {
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+.hero button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}

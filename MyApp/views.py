@@ -55,9 +55,9 @@ def show(request, id):
 def get_response(request):
     if request.user.is_anonymous:
         return redirect("/login")
-    # Ensure the request method is GET
+    
     if request.method == "GET":
-        # Get the 'userMessage' from the query parameters
+        
         user_message = request.GET.get('userMessage', None)
         if user_message:
             chatResponse = str(bot.get_response(user_message))
@@ -65,7 +65,7 @@ def get_response(request):
         else:
             return JsonResponse({"error": "No userMessage provided"}, status=400)
 
-    # If not a GET request, return a 405 Method Not Allowed response
+    
     return JsonResponse({"error": "Method not allowed"}, status=405)
 
 def registerUser(request):
@@ -90,11 +90,11 @@ def loginUser(request):
         password = request.POST.get('password')
         user = authenticate(username=username, password=password)
         if user is not None:
-            # A backend authenticated the credentials
+           
             login(request, user)
             return redirect("/explore")
         else:
-            # No backend authenticated the credentials
+            
             return render(request, 'login.html')    
     
     return render(request, 'login.html')
