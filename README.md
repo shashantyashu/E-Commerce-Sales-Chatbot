@@ -168,5 +168,5 @@ This project is a Django-based e-commerce platform integrated with an AI-driven 
 For any inquiries, please contact: 📧📧📧
 - **Name**: Shashant
 - **Email**: shashantyashu2004@gmail.com
-- **LinkedIn**: https://www.linkedin.com/in/shashant-yashu-383718338/overlay/about-this-profile/
+- **LinkedIn**: https://www.linkedin.com/in/shashant-yashu-383718338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app 
 
