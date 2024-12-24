@@ -164,14 +164,9 @@ This project is a Django-based e-commerce platform integrated with an AI-driven 
 
 ---
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details. 📜📜📜
-
----
-
 ## Contact
 For any inquiries, please contact: 📧📧📧
-- **Name**: [Your Name]
-- **Email**: [Your Email]
-- **LinkedIn**: [Your LinkedIn Profile]
+- **Name**: Shashant
+- **Email**: shashantyashu2004@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/shashant-yashu-383718338/overlay/about-this-profile/
 
