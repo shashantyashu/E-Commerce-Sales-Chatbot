@@ -117,8 +117,7 @@
                 <input class="form-control me-2 search-input" type="search" placeholder="Search destinations" aria-label="Search">
                 <button class="btn btn-success search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
               </form>
-            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a  data-bs-toggle="offcanvas"  data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" class="nav-link" href="/signup"><img class="logo" src="{% static "images/chatbot.png" %}" alt=""><p class="chatbotName">chatbot</p></a>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div class="navbar-nav ms-auto">
               <a class="nav-link" href="/logout"><b>Log out</b></a>
             </div>
@@ -130,7 +129,10 @@
 
 
     {% block body %}{% endblock body %}
+    
 
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/12/26/03/20241226033401-ADL64AAD.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
